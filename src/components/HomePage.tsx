@@ -2,13 +2,11 @@
 import { useLocation } from "react-router-dom";
 import { Navbar } from "./ui/Navbar"
 import { Button, Image, Link } from "@nextui-org/react";
-import { FaFacebookF,FaInstagram } from "react-icons/fa6";
+import { Footer } from "./Footer";
 
 
 export const HomePage = () => {
     const location = useLocation();
-    
-
   return (
     <>
         <div className="size-full flex flex-col overflow-auto">
@@ -167,17 +165,19 @@ export const HomePage = () => {
                     <p>Maintain the highest standards for safety and cleanliness</p>
                     <p>Resolve and unsatisfactory experience immediately</p>
                 </div>
-                <div></div>
+                <div className="w-full h-28 flex justify-center">
+                    <Button
+                        href="/about"
+                        as={Link}
+                        variant="solid"
+                        className="bg-pink-500 ml-5 rounded-2xl mt-5 text-white"
+                        >
+                        About us
+                    </Button>
+                </div>
             </div>
             <div className="w-full h-[500px] flex flex-col justify-end items-center">
-                <div className="w-14 h-10 flex justify-around " >
-                    <FaFacebookF size={15} />
-                    <FaInstagram size={15} />
-                </div>
-                <div className="w-full h-10 bg-black text-white flex justify-center items-center
-                 font-thin text-sm">
-                    <p>© { new Date().getFullYear() } by Pure in Heart LLC</p>
-                </div>
+                <Footer/>
             </div>
         </div>
     </>
