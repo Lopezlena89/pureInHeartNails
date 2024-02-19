@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Zeyada&display=swap');
+
+.font-subtitle{
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:40px;
+    color:rgb(220, 0, 0);
+}
