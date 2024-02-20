@@ -130,7 +130,7 @@ export const HomePage = () => {
                         </NavLink>
                 </div>
             </div>
-            <div className="w-auto h-[800px] bg-[url('/heart.png')] mx-5 flex flex-col justify-start items-center">
+            <div className="w-auto  bg-[url('/heart.png')] mx-5 flex flex-col justify-start items-center">
                 <div className="w-full h-72 flex justify-center items-center mt-10 ">
                     <Image
                         src="/into-hearts.png"
@@ -155,7 +155,7 @@ export const HomePage = () => {
                     <p>Maintain the highest standards for safety and cleanliness</p>
                     <p>Resolve and unsatisfactory experience immediately</p>
                 </div>
-                <div className="w-full flex justify-center items-center">
+                <div className="w-full flex justify-center items-center m-5">
                     <NavLink to="/about">
                         <div className="bg-pink-400 font-thin mt-5 text-white mr-5 rounded-2xl h-[40px] w-[100px] flex justify-center items-center hover:bg-pink-300">
                             About Us
@@ -163,7 +163,7 @@ export const HomePage = () => {
                     </NavLink>
                 </div>
             </div>
-            <div className="w-full h-[500px] flex flex-col justify-end items-center">
+            <div className="w-full flex flex-col justify-end items-center ">
                 <Footer/>
             </div>
         </div>
