@@ -157,7 +157,7 @@ export const HomePage = () => {
                 </div>
                 <div className="w-full flex justify-center items-center">
                     <NavLink to="/about">
-                        <div className="bg-pink-400 font-thin text-white mr-5 mt-5 rounded-2xl h-[40px] w-[100px] flex justify-center items-center hover:bg-pink-300">
+                        <div className="bg-pink-400 font-thin mt-5 text-white mr-5 rounded-2xl h-[40px] w-[100px] flex justify-center items-center hover:bg-pink-300">
                             About Us
                         </div>
                     </NavLink>
