@@ -8,9 +8,12 @@ export const AboutPage = () => {
   return (
     <div className="w-full h-full">
     <Navbar path={location.pathname}/>
-    <div className="w-full h-[800px] bg-gray-100 flex ">
-        <div className="w-1/2 h-full flex justify-center items-center">
-          <div className="w-2/3 h-4/6 mt-20 flex flex-col font-thin text-gray-600">
+    <div className="w-full h-[50px]">
+
+    </div>
+    <div className="w-full h-[1400px] bg-gray-100 flex flex-col md:flex-row  md:h-[800px]">
+        <div className="w-full h-full flex justify-center items-start md:w-1/2">
+          <div className="w-2/3  mt-20 flex flex-col font-thin text-gray-600">
               <h2 className="h-20 text-4xl">ABOUT US</h2>
               <p className="h-36 mt-5">A lot of these new "hype" up and coming nail salons claim to revolutionize the nail 
                 industry with new claimed procedures, fancy products, and a new culture that is 
@@ -26,7 +29,7 @@ export const AboutPage = () => {
                 the client, will be extremely happy with. That is who we are at Pure in Heart.</p>
           </div>
         </div>
-        <div className="w-1/2 h-full bg-[url('/nails-picture.png')] bg-cover">
+        <div className="w-full h-full bg-[url('/nails-picture.png')] bg-cover md:w-1/2">
 
         </div>
     </div>
