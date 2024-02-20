@@ -1,7 +1,7 @@
 
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Navbar } from "./ui/Navbar"
-import { Button, Image, Link } from "@nextui-org/react";
+import {  Image } from "@nextui-org/react";
 import { Footer } from "./Footer";
 
 
@@ -24,22 +24,17 @@ export const HomePage = () => {
                             <p className="text-gray-500 text-md md:text-xl">Transforming the nail experience one ❤ at a time</p>
                         </div>
                         <div className="w-full flex justify-center">
-                            <Button
-                                href="/services"
-                                as={Link}
-                                variant="solid"
-                                className="bg-red-300 text-white mr-5 rounded-2xl"
-                                >
-                                Services
-                            </Button>
-                            <Button
-                                href="/about"
-                                as={Link}
-                                variant="solid"
-                                className="bg-red-300 text-white ml-5 rounded-2xl"
-                                >
-                                About Us
-                            </Button>
+                            <NavLink to="/services">
+                                <div className="bg-red-300 font-thin text-white mr-5 rounded-2xl h-[40px] w-[100px] flex justify-center items-center hover:bg-red-200">
+                                    Services
+                                </div>
+                            </NavLink>
+                            <NavLink to="/about">
+                                <div className="bg-red-300 font-thin text-white mr-5 rounded-2xl h-[40px] w-[100px] flex justify-center items-center hover:bg-red-200">
+                                    About Us
+                                </div>
+                            </NavLink>
+                            
                         </div>
                     </div>
                     
@@ -60,14 +55,12 @@ export const HomePage = () => {
                         <p>Non-toxic</p>
                         <p>Natural</p>
                         <p>Eco-friendly</p>
-                        <Button
-                            href="/about"
-                            as={Link}
-                            variant="solid"
-                            className="bg-lime-200 text-black ml-5 rounded-2xl mt-5"
-                            >
-                            More Info
-                        </Button>
+                        <NavLink to="/about">
+                            <div className="bg-lime-300 text-black text-base mt-3 mr-5 rounded-2xl h-[40px] w-[100px] flex justify-center items-center hover:bg-lime-100">
+                                More Info
+                            </div>
+                        </NavLink>
+                        
                     </div>
                 </div>
             </div> 
@@ -130,14 +123,11 @@ export const HomePage = () => {
                    
                 </div>
                 <div className="h-96 flex justify-center items-center">
-                    <Button
-                        href="/about"
-                        as={Link}
-                        variant="solid"
-                        className="bg-lime-200 text-black ml-5 rounded-2xl mt-5"
-                        >
-                        More Info
-                    </Button>
+                        <NavLink to="/services">
+                            <div className="bg-lime-300 text-black font-thin text-base mt-3 mr-5 rounded-2xl h-[40px] w-[100px] flex justify-center items-center hover:bg-lime-100">
+                                More Info
+                            </div>
+                        </NavLink>
                 </div>
             </div>
             <div className="w-auto h-[800px] bg-[url('/heart.png')] mx-5 flex flex-col justify-start items-center">
@@ -166,14 +156,11 @@ export const HomePage = () => {
                     <p>Resolve and unsatisfactory experience immediately</p>
                 </div>
                 <div className="w-full flex justify-center items-center">
-                    <Button
-                        href="/about"
-                        as={Link}
-                        variant="solid"
-                        className="bg-pink-500 ml-5 rounded-2xl mt-5 text-white"
-                        >
-                        About us
-                    </Button>
+                    <NavLink to="/about">
+                        <div className="bg-pink-400 font-thin text-white mr-5 mt-5 rounded-2xl h-[40px] w-[100px] flex justify-center items-center hover:bg-pink-300">
+                            About Us
+                        </div>
+                    </NavLink>
                 </div>
             </div>
             <div className="w-full h-[500px] flex flex-col justify-end items-center">

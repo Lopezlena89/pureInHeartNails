@@ -8,12 +8,14 @@ export const Navbar = ({path}:{path:string}) => {
     <>
         <div className="z-10 w-full h-28  flex justify-between fixed bg-white">
             <div className="flex justify-center items-center ml-5 md:ml-20">
-                <Image
-                    src="/logo.png"
-                    alt="Pure in Heart Logo"
-                    width={80}
-                    height={80}
-                />
+                <NavLink to="/">
+                    <Image
+                        src="/logo.png"
+                        alt="Pure in Heart Logo"
+                        width={80}
+                        height={80}
+                    />
+                </NavLink>
                 <div className="flex flex-col justify-center items-start ml-5">
                     <h1 className="text-sm font-light sm:text-2xl">PURE IN HEART</h1>
                     <p className="font-thin text-sm">Nail Boutique</p>
